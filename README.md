@@ -6,12 +6,12 @@
 
 ## Subtask 6A:
 
-I first established a bilinear interpolation baseline, which already achieved a PSNR of 41.66
+<p align="left">I first established a bilinear interpolation baseline, which already achieved a PSNR of 41.66
 dB and SSIM of 0.9757 on the full dataset. This strong baseline revealed that the LR–HR signal gap is
 low-frequency dominant and structurally smooth, making a GAN-style approach unnecessary overkill
 and RRDB’s dense texture recovery capacity largely redundant and prone to overfitting on this data. I
 therefore selected EDSR with 16 residual blocks, 64 feature channels, and residual scaling (0.1) as the
-right balance of capacity and stability for this task.
+right balance of capacity and stability for this task.</p>
 
 I trained EDSR with a combined loss, where the frequency-domain component
 penalises differences in the Fourier coefficient magnitudes between predicted and target images,
