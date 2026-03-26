@@ -1,8 +1,8 @@
 ## Task 1 (Common Task):
 
-<p align="left">I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.
+<p align="left">I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.</p>
 
-Obtained AUC = 0.9942 on no subtructure class, AUC = 0.9909 on subhalo substructure class and AUC = 0.9978 on vortex substructure class.</p>
+<p align="left">Obtained AUC = 0.9942 on no subtructure class, AUC = 0.9909 on subhalo substructure class and AUC = 0.9978 on vortex substructure class.</p>
 
 ## Subtask 6A:
 
