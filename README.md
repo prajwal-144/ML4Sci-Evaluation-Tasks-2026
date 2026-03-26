@@ -1,8 +1,8 @@
-<p align="left"> ## Task 1 (Common Task):
+## Task 1 (Common Task):
 
-I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.
+<p align="left">I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.
 
-Obtained AUC = 0.9942 on no subtructure class, AUC = 0.9909 on subhalo substructure class and AUC = 0.9978 on vortex substructure class.
+Obtained AUC = 0.9942 on no subtructure class, AUC = 0.9909 on subhalo substructure class and AUC = 0.9978 on vortex substructure class.</p>
 
 ## Subtask 6A:
 
@@ -55,4 +55,4 @@ degradation diversity is counter-productive. The few-shot experiments showed tha
 real images and tail-only adaptation, the model recovers to approximately 31.2 dB, demonstrating strong
 generalisation from the simulated 6A distribution. The ∼9 dB drop from Task A to Task B reflects the
 genuine domain gap between the two datasets. It directly motivates the feature-level alignment and
-domain randomisation strategy proposed for the GSoC pipeline. </p>
+domain randomisation strategy proposed for the GSoC pipeline. 
