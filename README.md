@@ -40,6 +40,14 @@ using cosine annealing for 30 epochs, allowing the reconstruction layers to adap
 without disturbing learned lensing features. Stage 2 then unfreezes all layers with layer-wise learning
 rates, backbone at 10× lower rate than the tail.
 
+### Evaluation Results
+
+| Metric     | EDSR Plain    | EDSR Noise std=0.005  | EDSR Noise std=0.01  |
+|------------|---------------|-----------------------|----------------------|
+| MSE        | 0.000727      | 0.000883              |  0.000909            |
+| PSNR (dB)  | 33.4104       | 32.2187               |  32.0817             |
+| SSIM       | 0.842582      | 0.835272              |  0.836051            |
+
 I evaluated three transfer strategies: plain two-stage fine-tuning, fine-tuning with Gaussian noise in
 jection on LR images during Stage 2 (std = 0.005 and 0.01), and a few-shot tail-only fine-tuning with
 K ∈{10,20,30,40} randomly sampled images over 200 epochs. Plain fine-tuning achieved the best
