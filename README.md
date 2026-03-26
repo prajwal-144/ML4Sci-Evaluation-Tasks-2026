@@ -1,4 +1,4 @@
-**Task 1 (Common Task):**
+# Task 1 (Common Task):
 
 I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.
 
@@ -21,6 +21,13 @@ of +0.67 dB PSNR over bilinear interpolation. The modest but consistent gain dem
 combined loss helps recover high-frequency arc structure beyond what simple interpolation preserves,
 while confirming that the dataset does not require a generative model for competitive performance.
 
+### Evaluation Results
+
+| Metric     | Bilinear    | EDSR       |
+|------------|-------------|------------|
+| MSE        | 0.000069    | 0.000059   |
+| PSNR (dB)  | 41.6584     | 42.3349    |
+| SSIM       | 0.975671    | 0.977587   |
 
 **Subtask 6B:**
 
