@@ -1,10 +1,10 @@
-*Task 1 (Common Task):*
+**Task 1 (Common Task):**
 
 I chose to use DenseNet121 pretrained on ImageNet as each layer receives feature maps from each preceding layer which is useful for a gravitational lensing classification task.
 
 Obtained AUC = 0.9942 on no subtructure class, AUC = 0.9909 on subhalo substructure class and AUC = 0.9978 on vortex substructure class.
 
-*Subtask 6A:* 
+**Subtask 6A:**
 
 I first established a bilinear interpolation baseline, which already achieved a PSNR of 41.66
 dB and SSIM of 0.9757 on the full dataset. This strong baseline revealed that the LR–HR signal gap is
@@ -22,7 +22,7 @@ combined loss helps recover high-frequency arc structure beyond what simple inte
 while confirming that the dataset does not require a generative model for competitive performance.
 
 
-*Subtask 6B:*
+**Subtask 6B:**
 
 This task introduced a domain shift challenge: transferring the Task A’s EDSR to a morphologically distinct lensing dataset of only 300 images. Before training, I implemented a physics-motivated
 corruption detection pipeline that flagged samples exhibiting stripe artifacts (via row/column variance
