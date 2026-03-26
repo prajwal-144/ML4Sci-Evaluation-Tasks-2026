@@ -23,11 +23,11 @@ while confirming that the dataset does not require a generative model for compet
 
 ### Evaluation Results
 
-| Metric     | Bilinear    | EDSR       |
-|------------|-------------|------------|
-| MSE        | 0.000069    | 0.000059   |
-| PSNR (dB)  | 41.6584     | 42.3349    |
-| SSIM       | 0.975671    | 0.977587   |
+|Metric|Bilinear|EDSR|
+|-|-|-|
+|MSE|0.000069|0.000059|
+|PSNR (dB)|41.6584|42.3349|
+|SSIM|0.975671|0.977587|
 
 ## Subtask 6B:
 
@@ -42,15 +42,13 @@ rates, backbone at 10× lower rate than the tail.
 
 ### Evaluation Results
 
-| Metric     | EDSR Plain    | EDSR Noise std=0.005  | EDSR Noise std=0.01  |
-|------------|---------------|-----------------------|----------------------|
-| MSE        | 0.000727      | 0.000883              |  0.000909            |
-| PSNR (dB)  | 33.4104       | 32.2187               |  32.0817             |
-| SSIM       | 0.842582      | 0.835272              |  0.836051            |
+|Metric|EDSR Plain|EDSR Noise std=0.005|EDSR Noise std=0.01|
+|-|-|-|-|
+|MSE|0.000727|0.000883|0.000909|
+|PSNR (dB)|33.4104|32.2187|32.0817|
+|SSIM|0.842582|0.835272|0.836051|
 
-I evaluated three transfer strategies: plain two-stage fine-tuning, fine-tuning with Gaussian noise in
-jection on LR images during Stage 2 (std = 0.005 and 0.01), and a few-shot tail-only fine-tuning with
-K ∈{10,20,30,40} randomly sampled images over 200 epochs. Plain fine-tuning achieved the best
+I evaluated three transfer strategies: plain two-stage fine-tuning, fine-tuning with Gaussian noise injection on LR images during Stage 2 (std = 0.005 and 0.01), and a few-shot tail-only fine-tuning with K ∈{10,20,30,40} randomly sampled images over 200 epochs. Plain fine-tuning achieved the best
 performance at PSNR 33.41 dB and SSIM 0.8426, while noise-augmented variants were very close at
 32.22 dB and 32.08 dB respectively. This suggests that at this small dataset scale, injecting additional
 degradation diversity is counter-productive. The few-shot experiments showed that with as few as K=10
@@ -58,3 +56,4 @@ real images and tail-only adaptation, the model recovers to approximately 31.2 d
 generalisation from the simulated 6A distribution. The ∼9 dB drop from Task A to Task B reflects the
 genuine domain gap between the two datasets. It directly motivates the feature-level alignment and
 domain randomisation strategy proposed for the GSoC pipeline.
+
